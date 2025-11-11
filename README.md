@@ -51,7 +51,7 @@ The **road anomaly detection** process by the model followed three main stages:
 - **Object Detection:**  
   The model then localized each detected anomaly using **bounding boxes** defined by pixel coordinates. These bounding boxes helped indicate the exact location of road anomalies within each image frame.  
 
-Finally, the **coordinates of detected anomalies** were logged into a **CSV file**. This data was meant to be further utilized for **path planning**, **navigation**, and **control decisions** in the autonomous vehicle, enabling it to avoid hazards and maintain a safe trajectory.
+Finally, the **coordinates of detected anomalies** and **lane positions** were logged into a **CSV file**. This data was meant to be further utilized for **path planning**, **navigation**, and **control decisions** in the autonomous vehicle, enabling it to avoid hazards and maintain a safe trajectory.
 
 ---
 
