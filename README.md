@@ -60,12 +60,39 @@ Finally, the **coordinates of detected anomalies** and **lane positions** were l
 After developing the algorithm, it was deployed on a Raspberry Pi 4, model B, with 8GB RAM storage which was then mounted on the autonomous vehicle to detect the road anomalies and lane boundaries. The results for the deployment on the vehicle is shown in following sections:
 
 ### Results for Detection of Speedbumps
+<p align="center">
+  <img src="Test_Images/Speedbump_Image_1.jpg" alt="Detection Results for Sppedbumps Image 1" width="250" />
+  <img src="Test_Images/SpeedBump_2.png" alt="Detection Results for Speedbumps Image 2" width="250" />
+    <br>
+    <em> Fig 1: Detection Results for Speedbumps </em>
+</p>
 
 ### Results for Detection of Cracks
 
+<p align="center">
+  <img src="Test_Images/Cracks_Image_1.jpg" alt="Detection Results for Cracks Image 1" width="250" />
+  <img src="Test_Images/Cracks_Image_2.jpg" alt="Detection Results for Cracks Image 2" width="250" />
+    <br>
+    <em> Fig 2: Detection Results for Cracks </em>
+</p>
+
 ### Results for Detection of Potholes
 
+<p align="center">
+  <img src="Test_Images/Pothole_Image_1.jpg" alt="Detection Results for Potholes Image 1" width="250" />
+  <img src="Test_Images/Pothole_Image_2.png" alt="Detection Results for Potholes Image 2" width="250" />
+    <br>
+    <em> Fig 3: Detection Results for Potholes </em>
+</p>
+
 ### Lane Detection Results
+<p align="center">
+  <img src="Test_Images/Canny_Image_1.png" alt="Detection Results for Lanes Image 1" width="250" />
+  <img src="Test_Images/Canny_Image_2.png" alt="Detection Results for Lanes Image 2" width="250" />
+  <img src="Test_Images/Canny_Image_3.jpg" alt="Detection Results for Lanes Image 2" width="250" />
+    <br>
+    <em> Fig 4: Detection Results for Lanes </em>
+</p>
 
 ### Demo Video
 
