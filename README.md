@@ -36,7 +36,7 @@ For an autonomous vehicle to operate intelligently and safely, its perception sy
 
 The algorithm combined **Computer Vision techniques** specifically **Object Detection** and **Hough Line Transform** to identify **road anomalies** and **lane boundaries** along the vehicle’s path with the use of the **CS-3DW303**, 5- meaga pixel webcamera.  
 
-Pre-trained weights from the **YOLOv4 (You Only Look Once)** model were loaded using the **OpenCV** library. These weights were utilized to detect the targeted road anomalies which were **potholes**, **speed bumps**, and **cracks** in real-time video streams captured by THE **web camera** mounted at the center of the vehicle’s bonnet.  
+Pre-trained weights from the **YOLOv4 (You Only Look Once)** model were loaded using the **OpenCV** library. These weights were utilized to detect the targeted road anomalies which were **potholes**, **speed bumps**, and **cracks** in real-time video streams captured by the **web camera** mounted at the center of the vehicle’s bonnet.  
 
 To complement the anomaly detection process, **Hough Line Transform** was also done to detect lane boundaries. The process began with **edge detection** using the **Canny Edge Detector**, which highlighted regions of high intensity changes corresponding to the road’s edges. The resulting edge map was then transformed into **Hough Space**, where lines were interpreted as areas with the higheest intensity values. These areass indicated the most prominent lane boundaries within each frame.  
 
