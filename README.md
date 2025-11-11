@@ -34,7 +34,7 @@ For an autonomous vehicle to operate intelligently and safely, its perception sy
 
 ## 🪜 Step-by-Step-Procedure
 
-The algorithm combined **Computer Vision techniques** specifically **Object Detection** and **Hough Line Transform** to identify **road anomalies** and **lane boundaries** along the vehicle’s path.  
+The algorithm combined **Computer Vision techniques** specifically **Object Detection** and **Hough Line Transform** to identify **road anomalies** and **lane boundaries** along the vehicle’s path with the use of the **CS-3DW303**, 5- meaga pixel webcamera.  
 
 Pre-trained weights from the **YOLOv4 (You Only Look Once)** model were loaded using the **OpenCV** library. These weights were utilized to detect the targeted road anomalies which were **potholes**, **speed bumps**, and **cracks** in real-time video streams captured by a **web camera** mounted at the center of the vehicle’s bonnet.  
 
@@ -51,7 +51,7 @@ The **road anomaly detection** process by the model followed three main stages:
 - **Object Detection:**  
   The model then localized each detected anomaly using **bounding boxes** defined by pixel coordinates. These bounding boxes helped indicate the exact location of road anomalies within each image frame.  
 
-Finally, the **coordinates of detected anomalies** and **lane positions** were logged into a **CSV file**. This data was later utilized for **path planning**, **navigation**, and **control decisions** in the autonomous vehicle, enabling it to avoid hazards and maintain a safe trajectory.
+Finally, the [coordinates of detected anomalies](Test_Images/anomalies_data.png) and [lane positions](lanes_data_results.csv) were logged into a **CSV file**. This data was later utilized for **path planning**, **navigation**, and **control decisions** in the autonomous vehicle, enabling it to avoid hazards and maintain a safe trajectory.
 
 ---
 
@@ -100,5 +100,30 @@ After developing the algorithm, it was deployed on a Raspberry Pi 4, model B, wi
   <img src="Test_Images/IMG_0596.JPG" alt="Detection Results for Lanes Image 2" width="250" />
   <img src="Test_Images/b1.png" alt="Detection Results for Lanes Image 2" width="250" />
     <br>
-    <em> Fig 4: Diagram Depicting the Front View of the Autonomous Vehicle and the Webcamera Mounted on its Bonnet. </em>
+    <em> Fig 5: Diagram Depicting the Front View of the Autonomous Vehicle and the Webcamera Mounted on its Bonnet. </em>
 </p>
+
+---
+
+## ⚠️ Disclaimer
+The implementation of this project came with some limitations, which are outlined below along with potential remedies:
+
+- **Model Accuracy Under Adverse Conditions:** Despite the model performing excellently under normal lighting conditions, the detection accuracy of road anomalies (speedbumps, potholes, and cracks) was affected under poor lighting or weather conditions. Improving the model with additional training data that includes diverse environmental conditions and using higher-quality cameras could enhance robustness and reliability.
+
+- **Camera Stability:** Rough terrain caused instability of the onboard camera, making it challenging to accurately detect road boundaries in real-time. Employing a stabilized mounting system or gimbal can help maintain a consistent camera position during movement.
+
+- **Processing Lag:** Detection sometimes lagged due to the limited computational power of the Raspberry Pi 4B used for deployment. Utilizing a more powerful edge device or optimizing the algorithm for lower computational load can reduce latency and improve real-time performance.
+
+---
+
+## 📌 Note
+Please kindly note that this README file is a summarized version of the full implementation of this project. Dataset and Model Weights can be provided upon request.
+
+---
+
+## 👥 Contributors
+
+- **Engr. Dr Jibril Abdullahi Bala** : Staff Advisor
+- **Rizama Victor Samuel**  [GitHub: Rizama-Victor](https://github.com/Rizama-Victor)
+- **George Alianengiya**  [GitHub: aiBard101](https://github.com/aiBard101)
+- **Oladejo Sodiq Opeyemi**  [GitHub: surdma](https://github.com/surdma)
