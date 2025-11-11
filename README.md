@@ -38,7 +38,7 @@ The algorithm combined **Computer Vision techniques** specifically **Object Dete
 
 Pre-trained weights from the **YOLOv4 (You Only Look Once)** model were loaded using the **OpenCV** library. These weights were utilized to detect the targeted road anomalies which were **potholes**, **speed bumps**, and **cracks** in real-time video streams captured by the **web camera** mounted at the center of the vehicle’s bonnet.  
 
-To complement the anomaly detection process, **Hough Line Transform** was also done to detect lane boundaries. The process began with **edge detection** using the **Canny Edge Detector**, which highlighted regions of high intensity changes corresponding to the road’s edges. The resulting edge map was then transformed into **Hough Space**, where lines were interpreted as areas with the higheest intensity values. These areass indicated the most prominent lane boundaries within each frame.  
+To complement the anomaly detection process, **Hough Line Transform** was also done to detect lane boundaries. The process began with **edge detection** using the **Canny Edge Detector**, which highlighted regions of high intensity changes corresponding to the road’s edges. The resulting edge map was then transformed into **Hough Space**, where lines were interpreted as areas with the highest intensity values. These areas indicated the most prominent lane boundaries within each frame.  
 
 The **road anomaly detection** process by the model followed three main stages:  
 
@@ -51,7 +51,7 @@ The **road anomaly detection** process by the model followed three main stages:
 - **Object Detection:**  
   The model then localized each detected anomaly using **bounding boxes** defined by pixel coordinates. These bounding boxes helped indicate the exact location of road anomalies within each image frame.  
 
-Finally, the [coordinates of detected anomalies](Test_Images/anomalies_data.png) and [lane positions](lanes_data_results.csv) were logged into a **CSV file**. This data was later utilized for **path planning**, **navigation**, and **control decisions** in the autonomous vehicle, enabling it to avoid hazards and maintain a safe trajectory.
+Finally, the [coordinates of detected anomalies](Test_Images/anomalies_data.png) and [lane positions](lanes_data_results.csv) were each logged into two separate **CSV files** respectively. This data was later utilized for **path planning**, **navigation**, and **control decisions** in the autonomous vehicle, enabling it to avoid hazards and maintain a safe trajectory.
 
 ---
 
@@ -108,9 +108,9 @@ After developing the algorithm, it was deployed on a Raspberry Pi 4, model B, wi
 ## ⚠️ Disclaimer
 The implementation of this project came with some limitations, which are outlined below along with potential remedies:
 
-- **Model Accuracy Under Adverse Conditions:** Despite the model performing excellently under normal lighting conditions, the detection accuracy of road anomalies (speedbumps, potholes, and cracks) was affected under poor lighting or weather conditions. Improving the model with additional training data that includes diverse environmental conditions and using higher-quality cameras could enhance robustness and reliability.
+- **Model Accuracy Under Adverse Conditions:** Despite the model performing excellently under normal lighting conditions, the detection accuracy of road anomalies (speedbumps, potholes, and cracks) was affected under poor lighting or weather conditions. Improving the model with additional training data that includes diverse environmental conditions and using higher-quality cameras could improve accuracy and relaibility.
 
-- **Camera Stability:** Rough terrain caused instability of the onboard camera, making it challenging to accurately detect road boundaries in real-time. Employing a stabilized mounting system or gimbal can help maintain a consistent camera position during movement.
+- **Camera Stability:** Rough terrain caused instability of the onboard camera, making it challenging to accurately detect road boundaries in real-time. Using a stabilized mounting system or gimbal can help maintain a consistent camera position during movement.
 
 - **Processing Lag:** Detection sometimes lagged due to the limited computational power of the Raspberry Pi 4B used for deployment. Utilizing a more powerful edge device or optimizing the algorithm for lower computational load can reduce latency and improve real-time performance.
 
