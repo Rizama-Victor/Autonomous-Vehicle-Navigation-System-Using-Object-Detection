@@ -115,15 +115,15 @@ The implementation of this project came with some limitations, which are outline
 - **Processing Lag:** Detection sometimes lagged due to the limited computational power of the Raspberry Pi 4B used for deployment. Utilizing a more powerful edge device or optimizing the algorithm for lower computational load can reduce latency and improve real-time performance.
 
 ---
-
-## 📌 Note
-Please kindly note that this README file is a summarized version of the full implementation of this project. Dataset and Model Weights can be provided upon request.
-
----
-
 ## 👥 Contributors
 
 - **Engr. Dr Jibril Abdullahi Bala** : Staff Advisor
 - **Rizama Victor Samuel**  [GitHub: Rizama-Victor](https://github.com/Rizama-Victor)
 - **George Alianengiya**  [GitHub: aiBard101](https://github.com/aiBard101)
 - **Oladejo Sodiq Opeyemi**  [GitHub: surdma](https://github.com/surdma)
+
+---
+
+## 📌 Note
+Please kindly note that this README file is a summarized version of the full implementation of this project. Dataset and Model Weights can be provided upon request.
+
