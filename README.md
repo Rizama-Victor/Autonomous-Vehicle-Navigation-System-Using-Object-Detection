@@ -94,5 +94,11 @@ After developing the algorithm, it was deployed on a Raspberry Pi 4, model B, wi
     <em> Fig 4: Detection Results for Lanes </em>
 </p>
 
-### Demo Video
+### Camera Setup and Vehicle View
 
+<p align="center">
+  <img src="Test_Images/IMG_0596.JPG" alt="Detection Results for Lanes Image 2" width="250" />
+  <img src="Test_Images/b1.png" alt="Detection Results for Lanes Image 2" width="250" />
+    <br>
+    <em> Fig 4: Diagram Depicting the Front View of the Autonomous Vehicle and the Webcamera Mounted on its Bonnet. </em>
+</p>
