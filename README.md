@@ -34,7 +34,7 @@ For an autonomous vehicle to operate intelligently and safely, its perception sy
 
 ## 🪜 Step-by-Step-Procedure
 
-The system combined **Computer Vision techniques** specifically **Object Detection** and **Hough Line Transform** to identify **road anomalies** and **lane boundaries** along the vehicle’s path.  
+The algorithm combined **Computer Vision techniques** specifically **Object Detection** and **Hough Line Transform** to identify **road anomalies** and **lane boundaries** along the vehicle’s path.  
 
 Pre-trained weights from the **YOLOv4 (You Only Look Once)** model were loaded using the **OpenCV** library. These weights were utilized to detect the targeted road anomalies which were **potholes**, **speed bumps**, and **cracks** in real-time video streams captured by a **web camera** mounted at the center of the vehicle’s bonnet.  
 
@@ -51,8 +51,21 @@ The **road anomaly detection** process by the model followed three main stages:
 - **Object Detection:**  
   The model then localized each detected anomaly using **bounding boxes** defined by pixel coordinates. These bounding boxes helped indicate the exact location of road anomalies within each image frame.  
 
-Finally, the **coordinates of detected anomalies** and **lane positions** were logged into a **CSV file**. This data was meant to be further utilized for **path planning**, **navigation**, and **control decisions** in the autonomous vehicle, enabling it to avoid hazards and maintain a safe trajectory.
+Finally, the **coordinates of detected anomalies** and **lane positions** were logged into a **CSV file**. This data was later utilized for **path planning**, **navigation**, and **control decisions** in the autonomous vehicle, enabling it to avoid hazards and maintain a safe trajectory.
 
 ---
 
 ## 🔹 Results
+
+After developing the algorithm, it was deployed on a Raspberry Pi 4, model B, with 8GB RAM storage which was then mounted on the autonomous vehicle to detect the road anomalies and lane boundaries. The results for the deployment on the vehicle is shown in following sections:
+
+### Results for Detection of Speedbumps
+
+### Results for Detection of Cracks
+
+### Results for Detection of Potholes
+
+### Lane Detection Results
+
+### Demo Video
+
