@@ -1,5 +1,5 @@
 # 🚘 Autonomous Vehicle Navigation System (Perception) Using Object Detection
-This repository contains the implementation of the project titled _"Autonomous Vehicle Navigation System (Perception) Using Object Detection_, at the Department of Mechatronics Engineering (DOME), Federal University of Technology Minna (FUTMinna), Nigeria.
+This repository contains the implementation of the project titled _"Autonomous Vehicle Navigation System (Perception) Using Object Detection"_, at the Department of Mechatronics Engineering (DOME), Federal University of Technology Minna (FUTMinna), Nigeria.
 
 ---
 
